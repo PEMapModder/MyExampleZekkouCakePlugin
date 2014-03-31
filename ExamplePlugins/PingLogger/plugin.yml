@@ -4,3 +4,4 @@ website: "https://github.com/PEMapModder/MyExampleZekkouCakePlugin/tree/master/E
 version: '1'
 api: [1.0.0]
 main: PEMapModder\ExamplePlugins\PingLogger\MainPlugin
+description: "Logs the ping data of players with a horizontal bar-chart! Nearly lag-free!"
