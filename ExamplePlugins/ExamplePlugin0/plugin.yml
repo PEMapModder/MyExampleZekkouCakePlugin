@@ -1,12 +1,12 @@
 api: [1.0.0]
 version: 1.0
-name: Example0-Plugin-Zekkou_Cake
+name: "Example0-Plugin-Zekkou_Cake"
 main: ExamplePlugins\ExamplePlugin0\MainPlugin
 authors:
 - PEMapModder
 - PEMapModder's computer
 load: STARTUP
-description: PEMapModder's example plugin 0 for the Zekkou Cake plugin API
+description: "PEMapModder's example plugin 0 for the Zekkou Cake plugin API"
 website: "https://github.com/PEMapModder/MyExampleZekkouCakePlugin/tree/master/ExamplePLugins/ExamplePlugin0/"
 
 #the following are the basics of PEMapModder's example plugin 0 plugin.yml load information
