@@ -4,7 +4,7 @@ namespace ExamplePlugins\ExamplePlugin0;
 
 use PocketMine\Utils\TextFormat as Colors;
 
-class MainPlugin{
+class MainPlugin extends PluginBase{
 	public function onLoad(){
 		PocketMine\console(Colors::AQUA."Loading ExamplePlugin0!");
 	}
