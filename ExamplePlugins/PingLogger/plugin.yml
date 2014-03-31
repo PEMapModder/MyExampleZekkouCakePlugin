@@ -1,3 +1,6 @@
 name: PingLogger
 author: PEMapModder
-website: https://github.com/PEMapModder/MyExampleZekkouCakePlugin/tree/master/ExamplePlugins/PingLogger
+website: "https://github.com/PEMapModder/MyExampleZekkouCakePlugin/tree/master/ExamplePlugins/PingLogger"
+version: '1'
+api: [1.0.0]
+main: PEMapModder\ExamplePlugins\PingLogger\MainPlugin
