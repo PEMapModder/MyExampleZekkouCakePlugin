@@ -7,6 +7,7 @@ use PocketMine\Player;
 use PocketMine\Utils\Config;
 
 class MainPlugin extends PluginBase{
+	public static $instance=false;
 	private $server = null, $unit = 40;
 	public function onEnable(){
 		$this->server = Server::getInstance();
@@ -17,7 +18,8 @@ class MainPlugin extends PluginBase{
 		$config = new Config($this->configFile, Config::YAML, array(
 			"time-interval-to-log-in-seconds"=>1, "graphing"=>array(
 				"milliseconds-per-space"=>40)));
-		$this->server->schedule($config->get("time-interval-to-log-in-seconds"*20), array($this, "graph"));
+		$interval=$config->get("time-interval-to-log-in-seconds"*20);
+		$this->server->getScheduler()->scheduleRepeatingTask(new LogDataPath($this), $interval);
 		$this->unit=$config->get("milliseconds-per-space");
 	}
 	public function graph(){
