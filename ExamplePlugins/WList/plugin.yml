@@ -1,0 +1,18 @@
+name=WorldList
+description=Simple command: /wlist that shows a list of players in your world
+authors:
+- PEMapModder, a self learner
+- SGit, an unofficial Git client for Android
+- Nexus 4, a mobile that insists to let me finish my plugin before running out of battery
+load: PostWorld
+# Case insensitive
+main: "PEMapModder\WorldList\MainPlugin"
+version: 1.0
+api: [1.0.0]
+commands:
+  wlist:
+    description: show a list of all players in your world
+    usage: /wlist
+    aliases:
+    - /wl
+    
