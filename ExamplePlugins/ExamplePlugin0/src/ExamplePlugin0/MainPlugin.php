@@ -2,7 +2,7 @@
 
 namespace ExamplePlugins\ExamplePlugin0;
 
-use PocketMine\Utils\TextFormat as Colors;
+use pocketmine\utils\TextFormat as Colors;
 
 class MainPlugin extends PluginBase{
 	public function onLoad(){

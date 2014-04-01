@@ -2,9 +2,9 @@
 
 namespace PEMapModder\ExamplePlugins\PingLogger;
 
-use PocketMine\Server;
-use PocketMine\Player;
-use PocketMine\Utils\Config;
+use pocketMine\Server;
+use pocketMine\Player;
+use pocketMine\utils\Config;
 
 class MainPlugin extends PluginBase{
 	public static $instance=false;
